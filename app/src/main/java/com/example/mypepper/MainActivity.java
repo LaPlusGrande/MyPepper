@@ -27,7 +27,6 @@ public class MainActivity extends RobotActivity {
             @Override
             public void onClick(View view) {
                 Intent groupeIntent = new Intent(MainActivity.this, GroupeEntry.class);
-                groupeIntent.putExtra("keyBeNice", "valueBeNice");
                 startActivity(groupeIntent);
             }
         });
@@ -35,7 +34,6 @@ public class MainActivity extends RobotActivity {
         individual_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Intent individualIntent = new Intent(MainActivity.this,Individual.class);
                 startActivity(individualIntent);
             }

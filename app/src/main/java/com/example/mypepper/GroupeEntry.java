@@ -2,7 +2,6 @@ package com.example.mypepper;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -10,7 +9,6 @@ import com.aldebaran.qi.sdk.QiContext;
 import com.aldebaran.qi.sdk.QiSDK;
 import com.aldebaran.qi.sdk.RobotLifecycleCallbacks;
 import com.aldebaran.qi.sdk.design.activity.RobotActivity;
-import com.example.mypepper.actions.GreatingAnimation;
 
 public class GroupeEntry extends RobotActivity implements RobotLifecycleCallbacks {
 
@@ -44,19 +42,6 @@ public class GroupeEntry extends RobotActivity implements RobotLifecycleCallback
 
     @Override
     public void onRobotFocusGained(QiContext qiContext) {
-
-        // TODO: begrüßung separat im Schwierigkeitsgrad? button aus + begrüßung (kurz)
-//        Bundle caller = getIntent().getExtras();
-//            if (caller == null){
-//                Log.d(TAG, "an error occured");
-//            }
-//            else {
-//                String method = caller.getString("keyBeNice");
-//                Log.d(TAG,method);
-//                if (method.equals("valueBeNice")){
-//                 GreatingAnimation.beNice(qiContext);
-//               }
-//            }
 
         hard_button.setOnClickListener(new View.OnClickListener() {
             @Override

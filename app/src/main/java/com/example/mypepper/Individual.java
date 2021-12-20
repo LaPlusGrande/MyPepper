@@ -21,8 +21,6 @@ public class Individual extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_individual);
 
-        // initializing all our variables.
-
         readUserBtn = findViewById(R.id.idBtnReadUser);
         addBtn = findViewById(R.id.idBtnAddUser);
         backBtn = findViewById(R.id.idBtnBack);

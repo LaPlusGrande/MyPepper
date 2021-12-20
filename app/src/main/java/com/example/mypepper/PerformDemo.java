@@ -1,7 +1,5 @@
 package com.example.mypepper;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,11 +9,7 @@ import android.widget.Button;
 import com.aldebaran.qi.sdk.QiContext;
 import com.aldebaran.qi.sdk.QiSDK;
 import com.aldebaran.qi.sdk.RobotLifecycleCallbacks;
-import com.aldebaran.qi.sdk.builder.SayBuilder;
 import com.aldebaran.qi.sdk.design.activity.RobotActivity;
-import com.aldebaran.qi.sdk.object.conversation.Say;
-import com.example.mypepper.actions.Outro;
-import com.example.mypepper.actions.PepperAction;
 import com.example.mypepper.actions.PepperAnimation;
 
 public class PerformDemo extends RobotActivity implements RobotLifecycleCallbacks {

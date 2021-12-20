@@ -48,7 +48,7 @@ public class PepperAnimation extends PepperAction {
     public static void doBoxing(QiContext qiContext) throws ExecutionException, InterruptedException {
 
         Animation myAirBoxing = AnimationBuilder.with(qiContext)
-                .withResources(R.raw.boxing)
+                .withResources(R.raw.airboxing)
                 .build();
 
         moveFuture(AnimateBuilder.with(qiContext)
@@ -149,6 +149,18 @@ public class PepperAnimation extends PepperAction {
 
         moveFuture(AnimateBuilder.with(qiContext)
                 .withAnimation(myBodyTend)
+                .build()
+                .async().run());
+    }
+
+    public static void doRotation(QiContext qiContext) throws ExecutionException, InterruptedException {
+
+        Animation myRotation = AnimationBuilder.with(qiContext)
+                .withResources(R.raw.rotation)
+                .build();
+
+        moveFuture(AnimateBuilder.with(qiContext)
+                .withAnimation(myRotation)
                 .build()
                 .async().run());
     }
