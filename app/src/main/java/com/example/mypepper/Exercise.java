@@ -31,7 +31,7 @@ public class Exercise extends PepperAction {
 
                     case 0:
                         count1 = array.length;
-                        PepperSay.doSay(qiContext,"\\rspd=80\\ Tschüss ");
+                        PepperSay.doSay(qiContext,"\\rspd=80\\ das hast Spaß gemacht Tschüss");
                         Log.d(TAG,"executed > outro");
                         break;
                     case 1:
