@@ -57,10 +57,9 @@ public class PerformActivity extends RobotActivity implements RobotLifecycleCall
             }
             if (performMethod.equals("valueEasyPerform")){
 
-//                int[] arrayEasy = {10,7,6,5,11,3,12,0};
-//                int iteration=2;
-                int[] arrayEasy = {10};
+                int[] arrayEasy = {10,7,6,5,11,3,12,0};
                 int iteration=2;
+
 
                 Say intro = SayBuilder.with(qiContext)
                         .withText("\\rspd=80\\ schön dass ihr da seid \\pau=200\\ lasst uns ein paar einfache Übungen machen")
