@@ -31,8 +31,12 @@ public class Exercise extends PepperAction {
 
                     case 0:
                         count1 = array.length;
-                        PepperSay.doSay(qiContext,"\\rspd=80\\ das hast Spaß gemacht Tschüss");
-                        Log.d(TAG,"executed > outro");
+                        if (setback == iteration) {
+                            PepperSay.doSay(qiContext, "\\rspd=80\\ das hat Spaß gemacht ich hoffe wir sehen und bald wieder");
+
+                        }
+                        else {setback++;}
+                    Log.d(TAG,"executed > outro");
                         break;
                     case 1:
                         Log.i(TAG, "executed > start apple picking");
@@ -41,7 +45,6 @@ public class Exercise extends PepperAction {
                         PepperSay.doSay(qiContext,"\\rspd=80\\ es geht ein Arm nach dem anderen hoch \\pau=200\\ immer schön abwechselnd\\pau=200\\"+
                                         "\\rspd=80\\ ein Arm nach dem anderen strecken wir in, die Höhe");
                         PepperAnimation.doApplePicking(qiContext);
-                        waitForAction();
                         PepperAnimation.doRotation(qiContext);
                         break;
                     case 2:
@@ -51,7 +54,6 @@ public class Exercise extends PepperAction {
                         PepperSay.doSay(qiContext, "\\rspd=80\\wir heben unsere Arme an \\pau=200\\ und bewegen sie einmal in einem großen Kreis \\pau=200\\ so große,wie ihr könnt \\pau=200\\"+
                                 "\\rspd=80\\ ihr macht, das viel besser, als ich \\pau=200\\ Leider sind meine Schultergelenke etwas eingeschränkt");
                         PepperAnimation.doArmRotation(qiContext);
-                        waitForAction();
                         PepperAnimation.doRotation(qiContext);
                         break;
                     case 3:
@@ -70,7 +72,6 @@ public class Exercise extends PepperAction {
                         PepperSay.doSay(qiContext, "\\rspd=80\\ mit einem Arm nach dem anderen boxen wir nach vorn \\pau=200\\ immer schön abwechseln \\pau=500\\"+
                                 "\\rspd=80\\ erst mit der einen Faust und dann mit der anderen Faust");
                         PepperAnimation.doBoxing(qiContext);
-                        waitForAction();
                         PepperAnimation.doRotation(qiContext);
                         break;
                     case 5:
@@ -88,7 +89,6 @@ public class Exercise extends PepperAction {
                         PepperSay.doSay(qiContext, "\\rspd=80\\ wir öffnen und schließen unsere Händer \\pau=200\\ und gleichzeitig versuchen wir eine Faust zu machen\\pau=200\\"+
                                 "\\rspd=80\\ versucht euch auf beide Bewegungen zur selben Zeit zu konzentrieren \\pau=200\\ ich kann das auch nur weil es mir vorgemacht wurde");
                         PepperAnimation.doElbowHand(qiContext);
-                        waitForAction();
                         PepperAnimation.doRotation(qiContext);
                         break;
                     case 7:
@@ -98,7 +98,6 @@ public class Exercise extends PepperAction {
                         PepperSay.doSay(qiContext, "\\rspd=80\\  ihr solltet versuchen eure beiden Arme zur selben Zeit anzuwinkeln \\pau=200\\"+
                                 "\\rspd=80\\ unsere Arme gehen in einen Rechtenwinkel und wieder zurück");
                         PepperAnimation.doElbowStretch(qiContext);
-                        waitForAction();
                         PepperAnimation.doRotation(qiContext);
                         break;
                     case 8:
@@ -108,7 +107,6 @@ public class Exercise extends PepperAction {
                         PepperSay.doSay(qiContext, "\\rspd=80\\ Unsere Arme gehen in die höhe \\pau=200\\ und unser Augen versuchen sie zu verfolgen \\pau=200\\"+
                                 "\\rspd=80\\ unser Kopf bewegt sich nun zusätzlich hoch und runter\\pau=200\\ versucht dies wieder in eurem eigenen Tempo durchzuführen");
                         PepperAnimation.doFollowArm(qiContext);
-                        waitForAction();
                         PepperAnimation.doRotation(qiContext);
                         break;
                     case 9:
@@ -119,7 +117,6 @@ public class Exercise extends PepperAction {
                         PepperSay.doSay(qiContext,"\\rspd=80\\ wir müssen uns so lang wie möglich machen\\pau=200\\ und versuchen nach dem Himmel zu greifen\\pau=200\\"+
                                 "\\rspd=80\\ beim vorbeugen machen wir uns so klein wie es geht \\pau=200\\ und versuchen den Boden zu berühren");
                         PepperAnimation.doLiftArm(qiContext);
-                        waitForAction();
                         PepperAnimation.doRotation(qiContext);
                         break;
                     case 10:
@@ -129,7 +126,6 @@ public class Exercise extends PepperAction {
                         PepperSay.doSay(qiContext,"\\rspd=80\\ wir öffnen unsrere Hände und schließen sie mit aller Kraft \\pau=200\\"+
                                 "\\rspd=80\\und wieder öffnen und schließen \\pau=200\\ öffnen und, schließen");
                         PepperAnimation.doOpenHand(qiContext);
-                        waitForAction();
                         PepperAnimation.doRotation(qiContext);
                         break;
                     case 11:
@@ -147,7 +143,6 @@ public class Exercise extends PepperAction {
                                 "\\rspd=80\\ versucht euch einen moment lang zu entspannen \\pau=200\\ atmet ein und wieder aus \\pau=200\\ und wieder tief ein und langsam aus \\pau=200\\"+
                                 "\\rspd=80\\ Spürt ihr wie euer Bauch sich bewegt?");
                         PepperAnimation.doBreathbreak(qiContext);
-                        waitForAction();
                         PepperAnimation.doRotation(qiContext);
                         break;
                 }
