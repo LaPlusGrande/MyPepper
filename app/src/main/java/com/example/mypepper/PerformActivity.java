@@ -1,10 +1,12 @@
 package com.example.mypepper;
 
 import android.content.Intent;
+import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.aldebaran.qi.sdk.QiContext;
 import com.aldebaran.qi.sdk.QiSDK;
@@ -12,12 +14,14 @@ import com.aldebaran.qi.sdk.RobotLifecycleCallbacks;
 import com.aldebaran.qi.sdk.builder.SayBuilder;
 import com.aldebaran.qi.sdk.design.activity.RobotActivity;
 import com.aldebaran.qi.sdk.object.conversation.Say;
+import com.bumptech.glide.Glide;
 import com.example.mypepper.database.UpdateUser;
 
 public class PerformActivity extends RobotActivity implements RobotLifecycleCallbacks {
 
     private final static String TAG = PerformActivity.class.getName();
     public Button cancel_button;
+    ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +29,14 @@ public class PerformActivity extends RobotActivity implements RobotLifecycleCall
         setContentView(R.layout.activity_perform_activity);
         QiSDK.register(this, this);
 
-        cancel_button = (Button) findViewById(R.id.cancel_back_button);
+        // implement random gif
+        TypedArray images = getResources().obtainTypedArray(R.array.gif_array);
+        int choice = (int) (Math.random()*images.length());
+        imageView = findViewById(R.id.my_gif);
+        Glide.with(PerformActivity.this).load(images.getResourceId(choice,R.drawable.banana)).into(imageView);
+        images.recycle();
 
+        cancel_button = (Button) findViewById(R.id.cancel_back_button);
         cancel_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
