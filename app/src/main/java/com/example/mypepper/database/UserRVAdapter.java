@@ -40,10 +40,10 @@ public class UserRVAdapter extends RecyclerView.Adapter<UserRVAdapter.ViewHolder
         // on below line we are setting data
         // to our views of recycler view item.
         UserModal modal = userModalArrayList.get(position);
-        holder.userNameTV.setText(modal.getUserName());
-        holder.iterationTV.setText(modal.getAnimationTwo());
-        holder.animationOneTV.setText(modal.getIteration());
-        holder.animationTwoTV.setText(modal.getAnimationOne());
+        holder.userNameTV.setText("Name:"+modal.getUserName());
+        holder.iterationTV.setText("Wiederholung:"+modal.getIteration());
+        holder.animationOneTV.setText("Erste Übung:"+modal.getAnimationOne());
+        holder.animationTwoTV.setText("Zweite Übung:"+modal.getAnimationTwo());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override

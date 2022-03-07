@@ -44,23 +44,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:backgroundTint="#2a8bbc"
         android:text="Demo"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false"
+        android:textColor="#000000" />
+
     <Button
         android:id="@+id/idBtnAddUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:backgroundTint="#2a8bbc"
         android:text="Benutzer Hinzufügen"
-        android:textAllCaps="false" />
+        android:textAllCaps="false"
+        android:textColor="#000000" />
 
     <Button
         android:id="@+id/idBtnBack"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:backgroundTint="#005e8c"
         android:text="Zurück"
-        android:textAllCaps="false" />
+        android:textAllCaps="false"
+        android:textColor="#000000" />
 
 
 

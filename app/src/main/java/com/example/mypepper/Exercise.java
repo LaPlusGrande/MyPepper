@@ -114,7 +114,7 @@ public class Exercise extends PepperAction {
                                 "\\rspd=80\\beim runterkommen versuchen wir uns so weit wie möglich nach vorn zu beugen");
                         waitForSay();
                         PepperSay.doSay(qiContext,"\\rspd=80\\ wir müssen uns so lang wie möglich machen\\pau=200\\ und versuchen nach dem Himmel zu greifen\\pau=200\\"+
-                                "\\rspd=80\\ beim vorbeugen machen wir uns so klein wie es geht \\pau=200\\ und versuchen den Boden zu berühren");
+                                "\\rspd=80\\ beim vorbeugen machen wir uns so klein wie es geht");
                         PepperAnimation.doLiftArm(qiContext);
                         PepperAnimation.doRotation(qiContext);
                         break;
