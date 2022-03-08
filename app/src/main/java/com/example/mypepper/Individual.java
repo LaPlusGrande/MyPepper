@@ -44,7 +44,7 @@ public class Individual extends AppCompatActivity {
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Individual.this, MainActivity.class);
+                Intent i = new Intent(Individual.this, Welcome.class);
                 startActivity(i);
             }
         });

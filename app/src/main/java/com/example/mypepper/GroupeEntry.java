@@ -34,7 +34,7 @@ public class GroupeEntry extends RobotActivity implements RobotLifecycleCallback
         back_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent groupeIntent = new Intent(GroupeEntry.this, MainActivity.class);
+                Intent groupeIntent = new Intent(GroupeEntry.this, Welcome.class);
                 startActivity(groupeIntent);
             }
         });

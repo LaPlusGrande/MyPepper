@@ -41,7 +41,7 @@ public class PerformActivity extends RobotActivity implements RobotLifecycleCall
             @Override
             public void onClick(View view) {
                 Exercise.cancel();
-                    Intent backIntent = new Intent(PerformActivity.this, MainActivity.class);
+                    Intent backIntent = new Intent(PerformActivity.this, Welcome.class);
                     startActivity(backIntent);
             }
         });

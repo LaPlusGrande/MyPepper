@@ -9,9 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.mypepper.GroupeEntry;
 import com.example.mypepper.Individual;
-import com.example.mypepper.MainActivity;
 import com.example.mypepper.PerformActivity;
 import com.example.mypepper.R;
 

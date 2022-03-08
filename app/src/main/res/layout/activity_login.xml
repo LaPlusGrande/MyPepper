@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idTVLogin"
+        android:text="Login"
+        android:textColor="#000000"
+        android:textSize="100dp"
+        android:textStyle="bold"
+        android:layout_margin="50dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVLogin"
+        android:hint="Benutzer Name"
+        android:textColor="#000000"
+        android:textSize="70dp"
+        android:layout_margin="10dp"
+        android:id="@+id/idEdtLoginName"
+        android:padding="50dp"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idEdtLoginName"
+        android:hint="Passwort"
+        android:textColor="#000000"
+        android:textSize="70dp"
+        android:layout_margin="10dp"
+        android:id="@+id/idEdtPassword"
+        android:padding="50dp"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bestättigen"
+        android:layout_below="@id/idEdtPassword"
+        android:layout_centerHorizontal="true"
+        android:textSize="50dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="#2a8bbc"
+        android:textColor="#000000"
+        android:id="@+id/idBtnLogin"/>
+
+</RelativeLayout>

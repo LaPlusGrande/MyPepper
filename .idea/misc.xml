@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/2609l/AndroidStudioProjects/MyWorkOut/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.117" />
+        <entry key="..\:/Users/2609l/AndroidStudioProjects/MyWorkOut/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.117" />
         <entry key="..\:/Users/2609l/AndroidStudioProjects/MyWorkOut/app/src/main/res/layout/activity_add_user.xml" value="0.25" />
         <entry key="..\:/Users/2609l/AndroidStudioProjects/MyWorkOut/app/src/main/res/layout/activity_demo.xml" value="0.22" />
         <entry key="..\:/Users/2609l/AndroidStudioProjects/MyWorkOut/app/src/main/res/layout/activity_editing.xml" value="0.266015625" />
@@ -10,6 +12,7 @@
         <entry key="..\:/Users/2609l/AndroidStudioProjects/MyWorkOut/app/src/main/res/layout/activity_groupeworkout.xml" value="0.18" />
         <entry key="..\:/Users/2609l/AndroidStudioProjects/MyWorkOut/app/src/main/res/layout/activity_indi.xml" value="0.25546875" />
         <entry key="..\:/Users/2609l/AndroidStudioProjects/MyWorkOut/app/src/main/res/layout/activity_individual.xml" value="0.22" />
+        <entry key="..\:/Users/2609l/AndroidStudioProjects/MyWorkOut/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/2609l/AndroidStudioProjects/MyWorkOut/app/src/main/res/layout/activity_main.xml" value="0.144140625" />
         <entry key="..\:/Users/2609l/AndroidStudioProjects/MyWorkOut/app/src/main/res/layout/activity_perform.xml" value="0.25546875" />
         <entry key="..\:/Users/2609l/AndroidStudioProjects/MyWorkOut/app/src/main/res/layout/activity_performHard.xml" value="0.191015625" />
@@ -22,6 +25,7 @@
         <entry key="..\:/Users/2609l/AndroidStudioProjects/MyWorkOut/app/src/main/res/layout/activity_update_user.xml" value="0.26447044334975367" />
         <entry key="..\:/Users/2609l/AndroidStudioProjects/MyWorkOut/app/src/main/res/layout/activity_view_use.xml" value="0.227734375" />
         <entry key="..\:/Users/2609l/AndroidStudioProjects/MyWorkOut/app/src/main/res/layout/activity_view_user.xml" value="0.26447044334975367" />
+        <entry key="..\:/Users/2609l/AndroidStudioProjects/MyWorkOut/app/src/main/res/layout/activity_welcome.xml" value="0.1" />
         <entry key="..\:/Users/2609l/AndroidStudioProjects/MyWorkOut/app/src/main/res/layout/activity_workout.xml" value="0.1" />
         <entry key="..\:/Users/2609l/AndroidStudioProjects/MyWorkOut/app/src/main/res/layout/user_rv_item.xml" value="0.26447044334975367" />
       </map>
