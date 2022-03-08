@@ -37,6 +37,7 @@ public class Login extends AppCompatActivity {
                 {
                     // TODO: user name access
                     Intent loginintent = new Intent(Login.this,Welcome.class);
+                    startActivity(loginintent);
                     // TODO: show Toast if user is not available
 
                 }
